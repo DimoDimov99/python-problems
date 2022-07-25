@@ -1,0 +1,19 @@
+Problem: Turn a number into a list of digits
+
+Implement a function, called to_digits(n), which takes an integer n and returns a list containing the digits of n.
+
+Signature:
+def to_digits(number):
+    pass
+
+--------------------------------------------------
+Test examples:
+
+>>> to_digits(123)
+[1, 2, 3]
+>>> to_digits(99999)
+
+[9, 9, 9, 9, 9]
+>>> to_digits(123023)
+[1, 2, 3, 0, 2, 3]
+--------------------------------------------------

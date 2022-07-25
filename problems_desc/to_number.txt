@@ -1,0 +1,20 @@
+Problem: Turn a list of digits into a number
+
+Implement a function, called to_number(digits), which takes a list of integers - digits and returns the number, containing those digits.
+
+Signature:
+def to_number(digits):
+    pass
+
+--------------------------------------------------
+Test examples:
+
+>>> to_number([1,2,3])
+123
+>>> to_number([9,9,9,9,9])
+99999
+>>> to_number([1,2,3,0,2,3])
+123023
+>>> to_number([21, 2, 33])
+21233
+--------------------------------------------------

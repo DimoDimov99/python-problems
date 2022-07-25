@@ -1,0 +1,24 @@
+Problem: Is number balanced?
+
+A number is called balanced, if we take the middle of it and the sums of the left and right parts are equal.
+For example, the number 1238033 is balanced, because it's left part is 123 and right part is 033.
+We have : 1 + 2 + 3 = 0 + 3 + 3 = 6.
+A number with only one digit is always balanced!
+Implement a function is_number_balanced(n) that checks if n is balanced.
+
+Signature:
+def is_number_balanced(n):
+    pass
+
+--------------------------------------------------
+Test examples:
+
+>>> is_number_balanced(9)
+True
+>>> is_number_balanced(4518)
+True
+>>> is_number_balanced(28471)
+False
+>>> is_number_balanced(1238033)
+True
+--------------------------------------------------

@@ -1,0 +1,21 @@
+Problem: Sum the minimum and maximum elements
+
+Given an array of integers, implement a function, called sum_of_min_and_max(arr), that
+calculates and returns the sum of the largest and the smallest integers in the array.
+Don't bother for the case when the array is empty.
+
+
+Signature:
+def sum_of_min_and_max(arr):
+    pass
+
+--------------------------------------------------
+Test examples:
+
+>>> sum_of_min_and_max([1,2,3,4,5,6,8,9])
+10
+>>> sum_of_min_and_max([-10,5,10,100])
+90
+>>> sum_of_min_and_max([1])
+2
+--------------------------------------------------
