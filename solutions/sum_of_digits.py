@@ -13,12 +13,12 @@ def sum_of_digits(number):
 
 
 test_data = [
-    (43, 1325132435356),
-    (6, 123),
+    (1325132435356, 43),
+    (123, 6),
     (6, 6),
-    (1, -10),
+    (-10, 1),
 ]
 
 
 if __name__ == "__main__":
-    test_output(test_data, sum_of_digits)
+    test_output(test_data, sum_of_digits, True)

@@ -12,11 +12,11 @@ def is_prime(number):
 
 
 test_data = [
-    (False, 1),
-    (True, 2),
-    (False, 8),
-    (True, 11),
-    (False, -10)
+    (1, False),
+    (2, True),
+    (8, False),
+    (11, True),
+    (-10, False)
 ]
 
 

@@ -1,7 +1,6 @@
 from utils.test_program_output import test_output
 
 
-
 def palindromes_count(number):
     numbers_list = []
     palindrome_counter = 0
@@ -18,11 +17,11 @@ def palindromes_count(number):
 
 
 test_data = [
-    (0, 10),
-    (1, 20),
-    (10, 101),
-    (1009, 92009),
-    (1089, 99999),
+    (10, 0),
+    (20, 1),
+    (101, 10),
+    (92009, 1009),
+    (99999, 1089),
 ]
 
 

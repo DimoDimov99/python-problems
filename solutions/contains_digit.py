@@ -12,10 +12,10 @@ def contains_digit(number, digit):
 
 
 test_data = [
-    (False, (123, 4)),
-    (True, (42, 4)),
-    (True, (1000, 0)),
-    (False, (12346789, 5))
+    ((123, 4), False),
+    ((42, 4), True),
+    ((1000, 0), True),
+    ((12346789, 5), False)
 ]
 
 

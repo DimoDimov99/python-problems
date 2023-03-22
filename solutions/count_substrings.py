@@ -7,7 +7,6 @@ def count_substrings(haystack, needle):
     tempt_counter = 0
     total_occurances = 0
 
-
     for i in range(haystack_len):
         if haystack[i] == needle[tempt_counter]:
             temp_str += haystack[i]
@@ -25,15 +24,14 @@ def count_substrings(haystack, needle):
     return total_occurances
 
 
-
 test_data = [
-    (2, ("This is a test string", "is")),
-    (2, ("babababa", "baba")),
-    (4, ("Python is an awesome language to program in!", "o")),
-    (0, ("We have nothing in common!", "really?")),
-    (2, ("This is this and that is this that is", "this")),
-    (0, ("That that is", "this")),
-    (3, ("Dimodimodimodimo", "dimo"))
+    (("This is a test string", "is"), 2),
+    (("babababa", "baba"), 2),
+    (("Python is an awesome language to program in!", "o"), 4),
+    (("We have nothing in common!", "really?"), 0),
+    (("This is this and that is this that is", "this"), 2),
+    (("That that is", "this"), 0),
+    (("Dimodimodimodimo", "dimo"), 3)
 ]
 
 

@@ -1,5 +1,6 @@
 from utils.test_program_output import test_output
 
+
 def number_to_list(number):
     digit_list = []
 
@@ -24,10 +25,10 @@ def contains_digits(number, digits):
 
 
 test_data = [
-    (True, (402123, [0, 3, 4])),
-    (False, (666, [6, 4])),
-    (False, (1234567898, [1, 2, 3, 0])),
-    (True, (456, [])),
+    ((402123, [0, 3, 4]), True),
+    ((666, [6, 4]), False),
+    ((1234567898, [1, 2, 3, 0]), False),
+    ((456, []), True),
 ]
 
 

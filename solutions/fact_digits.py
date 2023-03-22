@@ -1,5 +1,6 @@
 from utils.test_program_output import test_output
 
+
 def factorial(number):
     if number == 0:
         return 1
@@ -25,12 +26,12 @@ def fact_digits(number):
 
 
 test_data = [
-    (3, 101),
-    (3, 111),
+    (101, 3),
+    (111, 3),
     (145, 145),
-    (1088640, 999),
+    (999, 1088640)
 ]
 
 
 if __name__ == "__main__":
-    test_output(test_data,fact_digits)
+    test_output(test_data, fact_digits, True)

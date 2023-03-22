@@ -13,11 +13,11 @@ def nan_expand(times):
 
 
 test_data = [
-    ("", 0),
-    ("Not a NaN", 1),
-    ("Not a Not a NaN", 2),
-    ("Not a Not a Not a NaN", 3)
+    (0, ""),
+    (1, "Not a NaN"),
+    (2, "Not a Not a NaN"),
+    (3, "Not a Not a Not a NaN")
 ]
 
 if __name__ == "__main__":
-    test_output(test_data, nan_expand)
+    test_output(test_data, nan_expand, True)

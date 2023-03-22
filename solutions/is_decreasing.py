@@ -9,12 +9,12 @@ def is_decreasing(number_set):
 
 
 test_data = [
-    (True, [5, 4, 3, 2 ,1]),
-    (False, [1, 2, 3]),
-    (True, [100, 50, 20]),
-    (False, [1, 1, 1, 1])
+    ([5, 4, 3, 2, 1], True),
+    ([1, 2, 3], False),
+    ([100, 50, 20], True),
+    ([1, 1, 1, 1], False)
 ]
 
 
 if __name__ == "__main__":
-    test_output(test_data, is_decreasing)
+    test_output(test_data, is_decreasing, True)

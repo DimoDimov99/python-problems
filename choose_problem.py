@@ -1,6 +1,6 @@
 import os
+import sys
 import random
-
 
 WORKING_DIR = os.getcwd()
 
@@ -33,7 +33,8 @@ def get_all_problems_without_extension():
     all_available_problems = get_all_available_problems()
     all_problems_names_without_extension = []
     for problem in all_available_problems:
-        all_problems_names_without_extension.append(problem.replace(".txt", ""))
+        all_problems_names_without_extension.append(
+            problem.replace(".txt", ""))
 
     return all_problems_names_without_extension
 
@@ -45,13 +46,16 @@ def show_problem_solution():
     for problem in all_problems_names_without_extension:
         print(problem)
 
-    user_input = input("Choose for which problem you want to see the solution: ")
-    if user_input in all_problems_names_without_extension:
+    choice = input("Choose for which problem you want to see the solution: ")
+    if choice in all_problems_names_without_extension:
         os.chdir(f"{WORKING_DIR}/problem_solutions")
-        with open(f"{user_input}.txt", "rt", encoding="utf8") as file:
-            clear()
-            for line in file:
-                print(line.rstrip('\n')) # handle whitespaces
+        try:
+            with open(f"{choice}.txt", "rt", encoding="utf8") as file:
+                clear()
+                for line in file:
+                    print(line.rstrip('\n'))  # handle whitespaces
+        except FileNotFoundError:
+            sys.exit("TBD")
 
 
 options = {
@@ -70,8 +74,10 @@ def main(arg):
 
 
 if __name__ == "__main__":
-    user_input = input("Type 'problem' to get random problem to solve. Type 'solution' to see problem solution. Type 'quit' to quit\n")
+    user_input = input(
+        "Type 'problem' to get random problem to solve. Type 'solution' to see problem solution. Type 'quit' to quit\n")
     while user_input != 'quit':
         main(user_input)
-        user_input = input("Type 'problem' for random problem to solve or type 'solution' to see problem solution. Type 'quit' to quit\n")
+        user_input = input(
+            "Type 'problem' for random problem to solve or type 'solution' to see problem solution. Type 'quit' to quit\n")
     print("Quiting...")

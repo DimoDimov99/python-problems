@@ -1,7 +1,6 @@
 from utils.test_program_output import test_output
 
 
-
 def to_digits(number):
     digit_list = []
 
@@ -12,10 +11,11 @@ def to_digits(number):
 
     return digit_list[::-1]
 
+
 test_data = [
-    ([1, 2, 3], 123),
-    ([9, 9, 9, 9, 9], (99999)),
-    ([1, 2, 3, 0, 2, 3], (123023))
+    (123, [1, 2, 3]),
+    (99999, [9, 9, 9, 9, 9]),
+    (123023, [1, 2, 3, 0, 2, 3])
 ]
 
 if __name__ == "__main__":

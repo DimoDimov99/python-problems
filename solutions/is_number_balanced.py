@@ -17,7 +17,7 @@ def is_number_balanced(number):
     digit_list = number_to_list(number)
     digit_list_len = len(digit_list)
 
-    if digit_list_len % 2 == 0: # handle even number len
+    if digit_list_len % 2 == 0:  # handle even number len
         middle = digit_list_len // 2
         for digit in range(digit_list_len):
             if digit + 1 <= middle:
@@ -25,7 +25,7 @@ def is_number_balanced(number):
             else:
                 right_part += digit_list[digit]
 
-    elif digit_list_len % 2 != 0: #handle odd number len
+    elif digit_list_len % 2 != 0:  # handle odd number len
         middle = (digit_list_len // 2) + 1
         for digit in range(digit_list_len):
             if digit + 1 < middle:
@@ -38,11 +38,11 @@ def is_number_balanced(number):
 
 
 test_data = [
-    (True, 9),
-    (True, 4518),
-    (False, 28471),
-    (True, 1238033),
-    (False, 21111),
+    (9, True),
+    (4518, True),
+    (28471, False),
+    (1238033, True),
+    (21111, False),
 
 ]
 

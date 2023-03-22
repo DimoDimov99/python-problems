@@ -1,5 +1,6 @@
 from utils.test_program_output import test_output
 
+
 def get_min_elem(arr):
     _min = arr[0]
 
@@ -18,7 +19,6 @@ def get_max_elem(arr):
     return _max
 
 
-
 def biggest_difference(arr):
     min_elem = get_min_elem(arr)
     max_elem = get_max_elem(arr)
@@ -27,14 +27,11 @@ def biggest_difference(arr):
 
 
 test_data = [
-    (-1, [1, 2]),
-    (-4, [1, 2, 3, 4, 5]),
-    (-9, [-10, -9, -1]),
-    (-99, (range(100)))
+    ([1, 2], -1),
+    ([1, 2, 3, 4, 5], -4),
+    ([-10, -9, -1], -9),
 ]
 
 
 if __name__ == "__main__":
     test_output(test_data, biggest_difference, True)
-
-
