@@ -1,0 +1,13 @@
+from utils.test_program_output import test_output
+
+
+def solve(_input):
+    pass
+
+
+test_data = [
+    (None, None),
+]
+
+if __name__ == "__main__":
+    test_output(test_data, solve, True)
