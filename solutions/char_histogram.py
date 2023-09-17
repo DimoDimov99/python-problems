@@ -16,8 +16,8 @@ def char_histogram(string):
 test_data = [
     ("", {}),
     ("    ", {" ": 4}),
-    ("Dimo", {'D': 1, 'i': 1, 'm': 1, 'o': 1}),
-    ("AAAAaaa!!!", {'A': 4, 'a': 3, '!': 3}),
+    ("Dimo", {"D": 1, "i": 1, "m": 1, "o": 1}),
+    ("AAAAaaa!!!", {"A": 4, "a": 3, "!": 3}),
 ]
 
 if __name__ == "__main__":

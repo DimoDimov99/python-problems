@@ -11,13 +11,7 @@ def is_prime(number):
     return True
 
 
-test_data = [
-    (1, False),
-    (2, True),
-    (8, False),
-    (11, True),
-    (-10, False)
-]
+test_data = [(1, False), (2, True), (8, False), (11, True), (-10, False)]
 
 
 if __name__ == "__main__":
