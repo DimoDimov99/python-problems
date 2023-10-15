@@ -8,7 +8,7 @@ def anagrams(word1, word2):
     return sorted(word1) == sorted(word2)
 
 
-tests = [
+test_data = [
     (("silent", "listen"), True),
     (("SILENT", "listen"), True),
     (("silent", "LISTEN"), True),
@@ -16,15 +16,9 @@ tests = [
     (("a gentleman", "elegant man"), True),
     (("eleven plus two", "twelve plus one"), True),
     (("William Shakespeare", "I am a weakish speller"), True),
-    (("", ""), True)
+    (("", ""), True),
 ]
 
 
-def test_func(test_data):
-    for actual, expected in test_data:
-        result = anagrams(*actual)
-        print(result == expected)
-
-
 if __name__ == "__main__":
-    test_func(tests)
+    test_output(test_data, anagrams, True, 2)
