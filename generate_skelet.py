@@ -5,8 +5,9 @@ import sys
 def generate_boilerplate():
     current_directory = os.getcwd()
     filename = input("Filename: ").lower().strip()
+    skeleton_location = f"{current_directory}/skeleton"
     try:
-        with open(f"{current_directory}/skeleton", "r", encoding="utf8") as file:
+        with open(skeleton_location, "r", encoding="utf8") as file:
             lines = file.readlines()
         os.chdir(f"{current_directory}/solutions")
         # print(os.getcwd())
